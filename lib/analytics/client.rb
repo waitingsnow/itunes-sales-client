@@ -46,14 +46,14 @@ module Spaceship
 
       ids = [id]
 
-      body = { 
-        "adamId": ids, 
-        "frequency": "DAY", 
+      body = {
+        "adamId": ids,
+        "frequency": "DAY",
         "measures": [measure],
-        "group": nil, 
-        "dimensionFilters": [], 
-        "startTime": start_time, 
-        "endTime": end_time 
+        "group": nil,
+        "dimensionFilters": [],
+        "startTime": start_time,
+        "endTime": end_time
       }
 
       response = request(:post) do |req|
